@@ -42,3 +42,9 @@ UPDATE `user` SET create_time = CURRENT_DATE WHERE create_time = '1970-01-01';
 ALTER TABLE `user` MODIFY COLUMN create_time DATE NOT NULL;
 ```
 
+## 默认时间字段
+
+```sql
+ALTER TABLE news MODIFY date TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+```
+

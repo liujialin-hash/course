@@ -12,7 +12,7 @@
 在 OceanBase 中，数据库实例被称为租户（Tenant）。首先需要创建一个租户。
 
 ```sql
-CREATE TENANT your_tenant_name
+CREATE TENANT your_tenant_namez
 CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci
 SET resource_pool_list='your_resource_pool_list';
 ```
@@ -277,8 +277,8 @@ drop sequence sequence_name;
       执行上述命令打开配置文件后，在配置文件中 oceanbase-ce（社区版）/oceanbase（企业版） 组件下添加 `root_password: xxxx`，添加完成后保存退出。示例如下：
 
       ```yaml
-      oceanbase-ce:
-        servers:
+          oceanbase-ce:
+            servers:
           - 127.0.0.1
         global:
           home_path: /home/admin/oceanbase-ce
@@ -475,9 +475,11 @@ obclient [oceanbase]>
 
 
 
+## 启动集群
 
-
-
+```
+obd cluster start <cluster_name>
+```
 
 
 

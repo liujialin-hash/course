@@ -81,7 +81,7 @@ vi +N 文件名
 1. 查看防火墙规则
 
 ```sh
-sudo iptables -L
+    sudo iptables -L
 ```
 
 2. 修改端口访问规则
@@ -94,6 +94,16 @@ sudo iptables -A INPUT -p tcp --dport 2881 -j ACCEPT
 
 ```sh
 sudo iptables -D INPUT -p tcp --dport 2881 -j ACCEPT
+
+```
+
+## 解压包
+
+```
+tar -vxf ....tar
+
+tar -vxzf ....gz
+
 
 ```
 
